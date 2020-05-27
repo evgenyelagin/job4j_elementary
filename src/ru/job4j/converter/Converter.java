@@ -1,7 +1,5 @@
 package ru.job4j.converter;
 
-import com.sun.jdi.Value;
-
 public class Converter {
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
