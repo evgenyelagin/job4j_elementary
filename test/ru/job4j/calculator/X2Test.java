@@ -2,8 +2,6 @@ package ru.job4j.calculator;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.condition.Point;
-import org.junit.Test;
 
 public class X2Test {
 
