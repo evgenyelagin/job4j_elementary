@@ -10,9 +10,9 @@ public class Turn {
     }
     public static int[] back(int[] input) {
         for (int i = 0; i < input.length - 1 - i; i++) {
-                int temp = input[i];
+                int temp0 = input[i];
                 input[i] = input[input.length - 1 - i];
-                input[input.length - 1 - i] = temp;
+                input[input.length - 1 - i] = temp0;
                           }
         return input;
     }
