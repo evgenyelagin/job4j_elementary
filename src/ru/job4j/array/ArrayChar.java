@@ -10,15 +10,13 @@ public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int i = 0; i < word.length - 1; i++) {
-            for (int j = i; j < pref.length - 1; j++) {
-                result = word[i] == pref[j];
-                if (word[i] != pref[j]) {
+            for (int j = 0; j < pref.length; j++) {
+                result = word[j] == pref[j];
+                if (word[j] != pref[j]) {
                     break;
                 }
             }
-        }
-            return result;
+                    return result;
 
         }
     }
