@@ -2,9 +2,11 @@ package ru.job4j.condition;
 
 public class Max {
     public static int max(int one, int two, int three, int four) {
-        int tmp1 = max(one, two);
-        int tmp2 = max(three, four);
-        return max(tmp1, tmp2);
+        return max(max(one, two), max(three, four));
+    }
+
+    public static int max(int one, int two, int three) {
+        return max(max(one, two), three);
     }
 
     public static int max(int one, int two) {

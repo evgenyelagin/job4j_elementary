@@ -47,4 +47,24 @@ public class MaxTest {
         int result = Max.max(1000, 120, 300, 1000);
         assertThat(result, is(1000));
     }
+    @Test
+    public void whenMaxOneOfThree() {
+        int result = Max.max(1000, 120, 300);
+        assertThat(result, is(1000));
+    }
+    @Test
+    public void whenMaxTwoOfThree() {
+        int result = Max.max(1000, 1120, 300);
+        assertThat(result, is(1120));
+    }
+    @Test
+    public void whenMaxThreeOfThree() {
+        int result = Max.max(1000, 1120, 3000);
+        assertThat(result, is(3000));
+    }
+    @Test
+    public void whenThreeEqualsThree() {
+        int result = Max.max(3000, 1120, 3000);
+        assertThat(result, is(3000));
+    }
 }
